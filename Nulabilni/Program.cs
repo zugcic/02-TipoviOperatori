@@ -9,21 +9,11 @@ namespace CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            double? nulabilniDuplic = 3.123;
-            Console.WriteLine(nulabilniDuplic);
+            double? nulabilniDuplić = Math.PI;
+            Console.WriteLine(nulabilniDuplić);
 
-            nulabilniDuplic = null;
-            Console.WriteLine(nulabilniDuplic);
+            double običniDuplic = Math.PI;
 
-            Nullable<int> nulabilniCijeli = null;
-            Console.WriteLine(nulabilniCijeli);
-            // ovo bi bacilo iznimku tipa InvalidOperationException:
-            Console.WriteLine(nulabilniCijeli.Value);
-
-            nulabilniCijeli = 5;
-
-            if (nulabilniCijeli.HasValue)
-                Console.WriteLine(nulabilniCijeli.Value);
 
             Console.ReadKey();
         }

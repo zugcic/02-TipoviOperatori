@@ -6,12 +6,11 @@ namespace CSharp.TipoviOperatori
     {
         decimal a;
         double b;
-        //MojaKlasa mk;
     }
 
-    struct MojaSlozenaStruktura
+    struct MojaSloženaStruktura
     {
-        public void IspisiSe()
+        public void IspišiSe()
         {
             Console.WriteLine(this.ToString());
         }
@@ -22,7 +21,7 @@ namespace CSharp.TipoviOperatori
 
     class MojaKlasa
     {
-        public void IspisiSe()
+        public void IspišiSe()
         {
             Console.WriteLine(this.ToString());
         }
@@ -35,28 +34,17 @@ namespace CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Duljina tipa decimal je: {0} bajtova.", sizeof(decimal));
-            Console.WriteLine("Duljina tipa double je: {0} bajtova.", sizeof(double));
+            // ispisati duljinu tipa decimal
 
-            //unsafe
-            {
-                // za tipove koji nisu ugrađeni treba sizeof staviti u unsafe kontekst
-                // u protivnom bi na sljedeću naredbu prevoditelj prijavio pogrešku:
-                //Console.WriteLine("Duljina tipa MojaStruktura je: {0} bajtova.", sizeof(MojaStruktura));
-            }
+            // ispisati duljinu tipa double
 
-            DuljinaMojihStruktura();
+            // ispisati duljinu tipa MojaStruktura
+
+            // ispisati duljinu tipa MojaSloženaStruktura
+
+            // ispisati duljinu tipa MojaKlasa
 
             Console.ReadKey();
-        }
-
-        unsafe static void DuljinaMojihStruktura()
-        {
-            Console.WriteLine("Duljina tipa MojaStruktura je: {0} bajtova.", sizeof(MojaStruktura));
-            Console.WriteLine("Duljina tipa MojaSlozenaStruktura je: {0} bajtova.", sizeof(MojaSlozenaStruktura));
-
-            // za referentne tipove nije moguće pozivati sizeof!
-            //Console.WriteLine("Duljina tipa MojaKlasa je: {0} bajtova.", sizeof(MojaKlasa));
         }
     }
 }

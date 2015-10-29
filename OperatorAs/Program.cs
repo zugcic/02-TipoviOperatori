@@ -10,7 +10,7 @@ namespace CSharp.TipoviOperatori
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Osoba janko = new Student();
             Student jankoStudent = janko as Student;
@@ -19,21 +19,17 @@ namespace CSharp.TipoviOperatori
             else
                 Console.WriteLine("null");
 
-
-            // ovo će biti null:
             Radnik jankoSljaker = janko as Radnik;
             if (jankoSljaker != null)
                 Console.WriteLine(jankoSljaker);
             else
                 Console.WriteLine("null");
 
-            // razlika između eksplicitne i uvjetne pretvorbe: eksplicitna će baciti iznimku:
-
             try
             {
                 jankoSljaker = (Radnik)janko;
             }
-            catch (InvalidCastException e)
+            catch (Exception e)
             {
                 Console.WriteLine("Bačena iznimka!");
                 Console.WriteLine(e.Message);
