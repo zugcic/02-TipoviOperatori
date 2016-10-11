@@ -80,9 +80,9 @@ izravne ekvivalente u IL-u.
 ZADATAK: Prevesti program te generirani kod pogledati ILDASM-om (IL disassemblerom).
 
 
-UgradjeniTipoviInicijalizacija
-------------------------------
-Primjer koji pokazuje kako se ugradjeni tipovi mogu inicijalizirati samo 
+UgrađeniTipoviInicijalizacija
+-----------------------------
+Primjer koji pokazuje kako se ugrađeni tipovi mogu inicijalizirati samo 
 operatorom pridruživanja ili podrazumijevanim konstruktorom.
 
 U Program.Main treba:
@@ -99,6 +99,40 @@ ZADATAK 3: Inicijalizirati varijablu tipa string pozivom podrazumijevanog
 
 ZADATAK 4: Napisati kod koji inicijalizira novu varijablu tipa string 
            na vrijednost "string 1".
+
+
+UgrađeniBrojčaniTipovi
+----------------------
+Primjer koji pokazuje neka svojstva ugrađenih brojčanih tipova.
+
+U Program.Main treba:
+
+ZADATAK 1: Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
+
+ZADATAK 2: Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue.
+           Ispisati vrijednost varijable uvećane za 1.
+
+ZADATAK 3: Ponoviti to isto za varijablu s vrijednošću int.MinValue umanjenom za 1.
+
+ZADATAK 4: Ispišite granične vrijednosti za tip double.
+
+ZADATAK 5: Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog
+           decimalnog broja s 0 te negativnog decimalnog broja s 0.
+
+ZADATAK 6: Provjeriti što će se ispisati kao rezultat kada se varijabla
+           tipa double s vrijednošću 0 podijeli s 0.
+
+
+NumeričkaPromocija
+------------------
+Primjer pokazuje kakvog je tipa rezultat binarne operacije nad dva broja različitih 
+tipova.
+
+ZADATAK 1: Definirati dvije varijable tipa int i provjeriti kojeg tipa je njihov kvocijent.
+           Dijeljitelj i dijeljenik odabrati tako da dijeljenje bude s ostatkom.
+
+ZADATAK 2: Definirati jednu varijablu tipa int i jednu tipa double te ih zbrojiti
+           te provjeriti kakvog tipa je taj zbroj.
 
 
 Nulabilni
