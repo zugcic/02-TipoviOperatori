@@ -3,10 +3,10 @@ TipoviOperatori
 
 Main
 ----
-Unutar klase smije biti samo jedan Main metoda (bez obzira što se metode u C# 
+Unutar klase smije biti samo jedan metoda Main (bez obzira što se metode u C# 
 mogu preopterećivati).
 
-Unutar izvedbenog (.EXE) modula može biti više Main metoda u različitim 
+Unutar izvedbenog (.EXE) modula može biti više metoda Main u različitim 
 klasama, ali tada prevoditelju treba navesti koja klasa će biti "početna", tj. 
 od koje Main metode treba program pokrenuti.
 
@@ -20,7 +20,7 @@ Dokumentacijski komentari
 Primjer dokumentacijskih komentara - opis funkcije Kvadrat
 
 ZADATAK: Za funkciju DuljinaDvijeRiječi napisati dokumentacijske komentare
-         i provjeriti pojavljuju li se opis u oblačiću funkcije.
+         i provjeriti pojavljuje li se opis u oblačiću funkcije.
 
 
 Imenici
@@ -205,3 +205,20 @@ OperatorTypeof
 --------------
 Operator typeof vraća kao rezultat objekt tipa Type koji sadrži sve informacije
 o dotičnom tipu.
+
+ZADATAK 1: Napisati petlju koja će za svaki član kojeg vrati metoda GetMembers
+           ispisati ime tog člana.
+
+ZADATAK 2: Proširiti tijelo petlje tako da ispis člana sadrži i informaciju
+           u kakvom se članu radi
+
+ZADATAK 3: Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods
+           ispisati ime metode i povratni tip.
+
+ZADATAK 4: Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni
+           parametri (tip i ime parametra).
+
+ZADATAK 5: Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li
+           public, protected ili private pravo pristupa.
+
+
