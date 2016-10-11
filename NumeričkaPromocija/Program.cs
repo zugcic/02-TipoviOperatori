@@ -12,6 +12,7 @@ namespace NumeričkaPromocija
         {
 
 
+
             Console.ReadKey();
         }
     }
