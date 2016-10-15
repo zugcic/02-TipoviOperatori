@@ -22,8 +22,8 @@ namespace CSharp.TipoviOperatori
 
             //Zadatak 4
             string g;
-            String s1="Vsite";//Dodjeljivanje vrijednosti u varijablu s
-            Console.WriteLine();
+            String s1="Vsite";//Dodjeljivanje vrijednosti u varijablu s1
+            Console.WriteLine(s1);
             Console.ReadKey();
             
             
