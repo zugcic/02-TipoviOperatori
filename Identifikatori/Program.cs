@@ -24,6 +24,7 @@ namespace CSharp.TipoviOperatori
             Console.WriteLine(šetrdesetšest);
             Console.WriteLine(šetrdesetšest);
             Console.WriteLine(бројШест);
+            Console.WriteLine($"{Main}");
 
         }
     }
